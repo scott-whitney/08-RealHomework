@@ -15,8 +15,8 @@ class Intern extends Employee{
     buildHtmlString(string){
         
         const htmlStr = `
-    <div class="col-12">
-        <div class="card" style="width: 18rem;">
+    <div class="col-4">
+        <div class="card" style="width: 100%;">
             <div class="card-body">
               <h5 class="card-title">Intern: ${this.name}</h5>
               <h6 class="card-subtitle mb-2 text-muted">School: ${this.school}</h6>

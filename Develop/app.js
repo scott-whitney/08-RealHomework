@@ -17,9 +17,14 @@ var topHtml = `
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>Title</title>
+    <title>Project Team</title>
   </head>
   <body>
+  <ul class="nav justify-content-center">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">Project Team</a>
+  </li>
+</ul>
   <div class="container">
   <div class="row">`
 
@@ -88,16 +93,21 @@ function ProjectBio(){
 ]).then(async answers => {
     console.log(answers);
     try{
+        
+        
+        
       let  projectBio = `
-        <div class="col-12">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                      <h5 class="card-title">${answers.projectName}</h5>
-                      <h6 class="card-subtitle mb-2 text-muted">${answers.companyName}</h6>
-                      <p class="card-text">${answers.bio}</p>
-                    </div>
-                  </div>
-            </div>`
+    <div class="col-12">
+      <div class="card mr-auto" style="width: 100%;">
+          <div class="card-body mx-auto">
+            <h5 class="card-title" mx-auto>${answers.projectName}</h5>
+            </div>
+            <div class="card-body mx-auto">
+            <h6 class="card-subtitle mb-2 text-muted">${answers.companyName}</h6>
+            <p class="card-text">${answers.bio}</p>
+          </div>
+        </div>
+  </div>`
         teamHtml += projectBio
         console.log(teamHtml)
         mainMenu()
