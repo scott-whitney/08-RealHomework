@@ -5,11 +5,14 @@ class Engineer extends Employee{
         super(name, id, email)
         this.github = github
     }
-    getGitHub(){
-
+    getGithub(){
+        var git = this.github
+        return git
     }
     getRole(){
         console.log("Engineer")
+        var engineer = "Engineer"
+        return engineer
     }
     buildHtmlString(string){
         

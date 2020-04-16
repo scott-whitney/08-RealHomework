@@ -5,8 +5,14 @@ class Manager extends Employee{
         super(name, id, email)
         this.officeNumber = officeNumber
     }
+    getOffice(){
+        var num = this.officeNumber
+        return num
+    }
     getRole(){
         console.log("Manager")
+         var manager = "Manager"
+        return manager
     }
     buildHtmlString(string){
         

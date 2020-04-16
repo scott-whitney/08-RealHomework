@@ -8,9 +8,12 @@ class Intern extends Employee{
     }
     getSchool(){
         console.log(this.school)
+        return this.school
     }
     getRole(){
         console.log("Intern")
+        var intern = "Intern"
+        return intern
     }
     buildHtmlString(string){
         

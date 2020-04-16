@@ -6,16 +6,20 @@ class Employee {
         this.email = email
     }
     getName(){
-
+        console.log(this.name)
+        return this.name
     }
     getId(){
-
+       var idt = this.id
+        return idt
     }
     getEmail(){
-
+        return this.email
     }
     getRole(){
         console.log("Employee")
+        var employee = "Employee"
+        return employee
     }
 }
 
